@@ -1,0 +1,45 @@
+#Dictionary {}
+#Dictionary는 키-값 (key-value) 쌍으로 저장하는 자료구조입니다. {}로 정의되며, 콜론으로 구분합니다 
+j = {
+    "name": "최정",
+    "age": 13,
+    "gender": "male"
+}
+print(j)
+
+#값접근하기 []
+name = j["name"]
+print(name)
+
+#값추가및 수정하기
+j["grade"]= 8
+s=j["grade"]
+print(s)
+
+j["age"]=11
+print(j)
+
+#값 제거하기 (del)
+del j["age"]
+print(j)
+
+#모든 기와 값 돌아가며 출력하기 (item())
+for key, value in j.items():
+    print(f"{key}: {value}")
+
+#모든 키가져오기 (keys())
+a=j.keys()
+print(a)
+
+#집합 (set)
+#집합은 중복되지않는 고유한 값들을 저장하는 자료구조입니다. {}로 정의되며, 순서가 보장되지않습니다
+numbers2 = {1,2,3,4,5}
+print(numbers2)
+
+#항복추가하기 (add())
+numbers2.add(6)
+numbers2.add(3) #이미 존재하는 값은 추가되지않습니다
+print(numbers2)
+
+numbers2.remove(3)
+print(numbers2)
