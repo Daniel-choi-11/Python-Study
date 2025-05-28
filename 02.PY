@@ -93,3 +93,16 @@ for key, value in j.items():
 #모든 키가져오기 (keys())
 a=j.keys()
 print(a)
+
+#집합 (set)
+#집합은 중복되지않는 고유한 값들을 저장하는 자료구조입니다. {}로 정의되며, 순서가 보장되지않습니다
+numbers2 = {1,2,3,4,5}
+print(numbers2)
+
+#항복추가하기 (add())
+numbers2.add(6)
+numbers2.add(3) #이미 존재하는 값은 추가되지않습니다
+print(numbers2)
+
+numbers2.remove(3)
+print(numbers2)
