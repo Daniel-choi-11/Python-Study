@@ -70,3 +70,37 @@ print(numbers2)  # {1, 2, 3, 4, 5, 6}
 numbers2.remove(3)
 print(numbers2)  # {1, 2, 4, 5, 6}
 
+#집합연산 (합집합, 차집합, 교집합)
+#1. 합집합 (union())
+#합집합은 모든집합들을 더한집합이다.
+
+#2. 차집합(difference())
+#첫집합에는 있지만, 두번째에는 없는 항목만 포함한 집합이다
+
+#3. 교집합(intersection())
+#두 집합이 만나는곳만 포함한 집합이다.
+
+m={1,2,3,4,5,6}
+n={4,5,6,7,8,9}
+print(m.union(n))
+print(m.difference(n))
+print(m.intersection(n))
+
+#4. 부분집합 (issubset())
+# a와 b가 있을 때, a 값이 b의 값 안에 모두 포함되어 있다면 a는 b의 부분집합이라 부른다.
+print(m.issubset(n))
+
+#5. 상위집합 (issuperset())
+# a와 b가 있을 때, a 값이 b의 값 안에 모두 포함되어 있다면 b는 a의 상위집합이라 부른다.
+print(m.issuperset(n))
+
+#dictionary와 set의 차이점
+#dictionary는 key와 value로 이루어져있다. set은 구조가 고유한 값들의 모음.
+#dictionary는 구조화된 데이터를 사용하고, set은 중복제거와 연산을 사용한다.
+
+grades = {
+    "Hiwoo": {"수학": 85, "영어": 90, "과학": 80},
+    "Jang": {"수학": 92, "영어": 88, "과학": 89},
+    "Greg": {"수학": 100, "영어": 100, "과학": 100}
+}
+
