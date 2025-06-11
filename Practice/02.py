@@ -1,3 +1,4 @@
+# 학생 점수 딕셔너리
 grades = {
     "Huang": {"Test":71},
     "John": {"Test":65},
@@ -6,14 +7,13 @@ grades = {
 }
 
 # 학생 이름을 리스트로 저장
-student=["Huang", "John", "Jung", "Darryl"]
+student = ["Huang", "John", "Jung", "Darryl"]
 
-# 합격자와 탈락자 명단을 
-# 리스트로 저장
+# 합격자와 탈락자를 저장할 리스트
 pass_list = []
 fail_list = []
 
-# 조건문으로 합격/탈락 분류
+# 조건문으로 각 학생 합격/탈락 판별
 if grades[student[0]]["Test"] <= 70:
     print("시험 탈락")
     fail_list.append(student[0])
@@ -42,18 +42,18 @@ else:
     print("시험 합격")
     pass_list.append(student[3])
 
-
 # 리스트를 튜플로 변환
-pass_tuple= tuple(pass_list)
-fail_tuple= tuple(fail_list)
+pass_tuple = tuple(pass_list)
+fail_tuple = tuple(fail_list)
 
-# 합격자 집합(set) 생성 (중복 제거 목적)
-pass_set= set(pass_tuple)
+# 집합(set)으로 중복 없는 합격자 명단 생성
+pass_set = set(pass_tuple)
+
 # 결과 출력
-print(pass_set)
+print("\n합격자 튜플:", pass_tuple)
+print("탈락자 튜플:", fail_tuple)
+print("합격자 집합:", pass_set)
 
-
-
-print("합격자 튜플:", pass_tuple)
+print("\n합격자 튜플:", pass_tuple)
 print("탈락자 튜플:", fail_tuple)
 print("합격자 집합:", pass_set)
