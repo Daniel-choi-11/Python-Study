@@ -54,6 +54,5 @@ print("\n합격자 튜플:", pass_tuple)
 print("탈락자 튜플:", fail_tuple)
 print("합격자 집합:", pass_set)
 
-print("\n합격자 튜플:", pass_tuple)
-print("탈락자 튜플:", fail_tuple)
-print("합격자 집합:", pass_set)
+# 질문? ('John',) 이렇게 '뒤에 , 들어가나요?
+# => Python에서 튜플을 만들 때 요소가 하나만 있으면 자동으로 쉼표(,)가 추가됩니다. Python이 단일 요소 튜플과 일반 괄호를 구분하기 위한 문법 규칙입니다!
