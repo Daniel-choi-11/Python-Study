@@ -8,7 +8,7 @@ grades = {
 # 학생 이름을 리스트로 저장
 student=["Huang", "John", "Jung", "Darryl"]
 
-# 합격자와 탈락자 명단을 튜플로 저장
+# 합격자와 탈락자 명단을 리스트로 저장
 pass_list = []
 fail_list = []
 
