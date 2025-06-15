@@ -6,23 +6,27 @@
 food = ["김치", "사과", "배"] 
 for item in food:
     print(item)
-print(f"for문 결과: {food}")
-# 출력: 김치
-# 출력: 사과  
-# 출력: 배
+# 출력:
+# 김치
+# 사과
+# 배
 
 # 1-1. range() 함수
 # for문에서 반복 횟수를 지정하고 싶을 때는 range 함수를 사용할 수 있습니다
-# i는 가상의 변수입니다 (반복 변수)
+# i는 반복 변수입니다
 for i in range(5):
     print("안녕하세요")
-# 출력: 안녕하세요 (5번 반복)
+# 출력:
+# 안녕하세요
+# 안녕하세요
+# 안녕하세요
+# 안녕하세요
+# 안녕하세요
 
 # 1-1-1. range() 함수 사용법
 # 기본 사용법: 괄호 안에 숫자를 쓰면, 그 숫자만큼 반복한다
 # 시작점과 끝 지정: range(start, stop)을 사용하면, start부터 stop-1까지의 숫자를 생성한다
 # 증가폭 지정: range(start, stop, step)을 사용하면 증가폭을 지정할 수 있다
-# 감소폭 지정: range(start, stop, step)을 사용하면 감소폭을 지정할 수 있다
 
 for i in range(2, 10, 2):
     print(i)
@@ -36,14 +40,14 @@ while count < 5:
     count += 1
 # 출력: 0, 1, 2, 3, 4
 
-# 2-1. 무한반복
+# 2-1. 무한반복 (주의: 실행하면 안 됨)
 # while True:
-#     print(1, 2, 3)
-# 출력: 1 2 3 (무한 반복)
+#     print("무한 반복")
 
 # 2-2. break와 continue
 # break는 반복문을 즉시 종료
 # continue는 현재 반복을 건너뛰고 다음 반복을 실행
+
 print("break 예시:")
 for i in range(5):
     if i == 3:
@@ -57,3 +61,4 @@ for i in range(5):
         continue
     print(i)
 # 출력: 0, 1, 2, 4
+
