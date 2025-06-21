@@ -1,68 +1,61 @@
 # 반복문 
-# 반복문은 코드를 여러 번 사용하고 싶을 때 사용됩니다.
+# 반복문은 코드를 여러번 사용하고싶을때 사용된다.
 
 # 1. for문 
-# 문자열, 리스트, 튜플 등과 같은 항목의 순서대로 접근할 때 사용됩니다.
-
-#for 반복변수 in 반복가능한객체:
-#    실행할코드
-
+# 문자열, 리스트, 튜플, 등과 같은 항목의 순서대로 접근할때 사용됩니다.
 food = ["김치", "사과", "배"] 
-for item in food:
-    print(item)
-# 출력:
-# 김치
-# 사과
-# 배
+for food in food:
+    print(food)
 
 # 1-1. range() 함수
-# for문에서 반복 횟수를 지정하고 싶을 때는 range 함수를 사용할 수 있습니다
-# i는 반복 변수입니다
+# for문에서 반복함수를 지정하고싶을때는 range함수를 사용할수있습니다
+# i는 가상의 변수다 (허수)
 for i in range(5):
     print("안녕하세요")
-# 출력:
-# 안녕하세요
-# 안녕하세요
-# 안녕하세요
-# 안녕하세요
-# 안녕하세요
 
-# 1-1-1. range() 함수 사용법
-# 기본 사용법: 괄호 안에 숫자를 쓰면, 그 숫자만큼 반복한다
-# 시작점과 끝 지정: range(start, stop)을 사용하면, start부터 stop-1까지의 숫자를 생성한다
-# 증가폭 지정: range(start, stop, step)을 사용하면 증가폭을 지정할 수 있다
+# 1-1-1. 
+    # 기본 사용법: 괄호안에 숫자를 쓰면, 그 숫자만큼 반복한다
+    # 시작점과 끝 지정: range(start, stop)을 사용하면, start부터 stop-1까지의 숫자를 생성한다
+    # 증가폭 지정: range(start, stop, step)을 사용하면 증가폭을 지정2할수있다
+    # 감소폭 지정: range(start, stop, step)을 사용하면 감소폭을 지정할수있다
 
-for i in range(2, 10, 2):
+for i in range(2,10,2):
     print(i)
-# 출력: 2, 4, 6, 8
+
 
 # 2. while문
-# while문은 조건이 참일 때, 반복을 계속 실행합니다. 조건이 거짓이 되면, 반복이 종료됩니다.
+# while문은 조건이 참일때, 반복을 계속실행합니다. 조건이 거짓이되면, 반복이 종료됩니다.
 count = 0
-while count < 5:
+while count<5:
     print(count)
     count += 1
-# 출력: 0, 1, 2, 3, 4
 
-# 2-1. 무한반복 (주의: 실행하면 안 됨)
-# while True:
-#     print("무한 반복")
+# 2-1. 무한반복
+#while True:
+#    print(1,2,3)
 
 # 2-2. break와 continue
-# break는 반복문을 즉시 종료
-# continue는 현재 반복을 건너뛰고 다음 반복을 실행
-
-print("break 예시:")
+#break는 반복문을 즉시 종료
+#continue는 현재반복을 건너뛰고 다음 반복을 실행
 for i in range(5):
-    if i == 3:
+    if i==3:
         break
     print(i)
-# 출력: 0, 1, 2
 
-print("continue 예시:")
 for i in range(5):
-    if i == 3:
+    if i==3:
         continue
     print(i)
-# 출력: 0, 1, 2, 4
 
+# 2-3. else문 사용하기
+# else문은 반복문이 정상적으로 종료되었을때 실행된다.
+for i in range(5):
+    print(i)
+else:
+    print("반복종료")
+
+# 2-4. 중첩반복문
+#반복문을 중첩해서 쓰는거다.
+for multiplication in range(2,10):
+    for two in range(1,10):
+        print(f"{multiplication} x {two} = {multiplication * two}")
