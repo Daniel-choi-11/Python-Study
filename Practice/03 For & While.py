@@ -4,6 +4,9 @@ for i in range(1,51):
         print(i)
 
 # 비밀번호 맞출 때까지 반복 입력받기
-correct_pw = 정답
-pw = input("비밀번호를 입력하세요: ")
-while ~~~
+correct_pw = 1234
+pw = int(input("비밀번호를 입력하세요:"))
+while pw != correct_pw:
+    print("틀렸습니다.") 
+    pw =int(input("다시 입력해주세요:"))
+print("축하합니다!")
