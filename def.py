@@ -14,3 +14,5 @@ a=3
 b=4
 c=add(a, b)
 print(c)
+
+print(add(10, 4))
