@@ -19,3 +19,20 @@ print(c)
 
 print(add(10, 4))
 
+=======================
+
+def add_without_return(a, b):
+    result = a + b # a 변수와 b 변수에 있는 값을 result 라는 변수에 저장해줘
+    print(result) # result 변수에 있는 값을 출력해줘
+
+total = add_without_return(3, 5) # return 값이 없기 때문에 total 이라는 변수에 아무 값도 저장이 안됨
+print(total) # None 출력
+
+# 두 수의 합을 반환하는 함수 예제
+def add(a, b):
+    result = a + b # a 변수와 b 변수에 있는 값을 result 라는 변수에 저장해줘
+    print(result) # result 변수에 있는 값을 출력해줘
+    return result # result 변수에 있는 값을 반환해줘
+
+total = add(3, 5) # return 값이 있던 덕분에 total 이라는 변수에 결과 값이 저장 됨
+print(total) # 8 출력
