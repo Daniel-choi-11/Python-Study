@@ -26,3 +26,8 @@ c= without_return(2,4)
 print(c)
 
 # return이 없으면 변수에 아무 값도 반환되지 않아서 출력값은 none이 출력된다.
+
+def greeting(name,greet="안녕하세요"):
+    print(f"{greet}, {name}님!")
+greeting("최정","환영합니다")
+# 기본값을 지정하면 함수 호출시 매개변수를 생략할수있습니다
