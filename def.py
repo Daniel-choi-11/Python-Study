@@ -18,3 +18,11 @@ c=add(a, b)
 print(c)
 
 print(add(10, 4))
+
+# return은 저장하는 역할
+def without_return(a,b):
+    return a*b
+c= without_return(2,4)
+print(c)
+
+# return이 없으면 출력값은 none, 있으면 일반 값
