@@ -8,6 +8,8 @@
 def 함수_이름(매개변수):
     수행할_문장1...
 
+#매개변수란 함수의 입력값또는 input이라 생각하면 편하다.
+
 def add(a, b): 
     return a + b
 a=3
@@ -16,3 +18,4 @@ c=add(a, b)
 print(c)
 
 print(add(10, 4))
+
