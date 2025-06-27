@@ -19,10 +19,10 @@ print(c)
 
 print(add(10, 4))
 
-# return은 저장하는 역할
+# return은 저장하는 역할 (값을 반환하는 역할)
 def without_return(a,b):
     return a*b
 c= without_return(2,4)
 print(c)
 
-# return이 없으면 출력값은 none, 있으면 일반 값
+# return이 없으면 변수에 아무 값도 반환되지 않아서 출력값은 none이 출력된다.
