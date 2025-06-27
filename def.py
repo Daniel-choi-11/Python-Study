@@ -31,3 +31,16 @@ def greeting(name,greet="안녕하세요"):
     print(f"{greet}, {name}님!")
 greeting("최정","환영합니다")
 # 기본값을 지정하면 함수 호출시 매개변수를 생략할수있습니다
+
+# 가변매개변수
+# *args: 숫자를 여러개받으면 튜플로 저장
+def a(*args):
+    for number in args:
+        print(number)
+a(3,4,6,7,10,4555)
+
+# **kwargs: 키워드임자를 dictionary로 전달받는다
+def io(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+io(name="최정",age=14,gender="male")
