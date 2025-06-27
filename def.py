@@ -44,3 +44,7 @@ def io(**kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 io(name="최정",age=14,gender="male")
+
+# lambda함수: 익명 함수
+add=lambda x,y:x+y
+print(add(3,900))
