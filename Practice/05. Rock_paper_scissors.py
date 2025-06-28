@@ -1,4 +1,4 @@
-#input 없이
+# input 없이
 import random
 def rock_paper_scissors(user_choice):
     choices = ["가위", "바위", "보"]
@@ -19,7 +19,8 @@ print(rock_paper_scissors("____"))
 
 =================
 
-#개선판
+# 개선판
+
 import random
 
 def rock_paper_scissors():
@@ -37,7 +38,8 @@ def rock_paper_scissors():
     print(f"컴퓨터의 선택 : {computer_choice}")
     
 
-    # 결과판정정
+    # 결과판정
+    
     if user_choice == computer_choice:
         return "비겼습니다"
     elif (user_choice == "가위" and computer_choice == "보") or \
