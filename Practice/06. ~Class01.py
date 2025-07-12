@@ -19,4 +19,4 @@ class calculator:
     
 
 calc = calculator()
-print(f"10 + 5 = {calc.add(10, 5)}")
+print(f"10 + 5 = {calc.addition(10, 5)}")
