@@ -19,3 +19,4 @@ class calculator:
     
 
 calc = calculator()
+print(f"10 + 5 = {calc.add(10, 5)}")
