@@ -18,4 +18,4 @@ class calculator:
         return a/b
     
 
-calc = Calculator()
+calc = calculator()
