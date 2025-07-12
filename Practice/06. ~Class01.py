@@ -1,3 +1,4 @@
+# 계산기
 class calculator:
     def __init__(self):
         """계산기 초기화"""
@@ -20,3 +21,17 @@ class calculator:
 
 calc = calculator()
 print(f"10 + 5 = {calc.addition(10, 5)}")
+
+
+#자기 소개
+class introduction:
+    def __init__(self,name,age,grade):
+        self.name=name
+        self.age=age
+        self.grade=grade
+    def introduce(self):
+        print(f"안녕하세요! 저는 {self.name}입니다. 제 나이는 {self.age}이고, 학년은 {self.grade}입니다!")
+
+person1= introduction("최정",14,8)
+person1.introduce()
+
