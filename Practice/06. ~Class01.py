@@ -18,8 +18,4 @@ class calculator:
         return a/b
     
 
-a=3
-b=4
-self=addition(a,b)
-print(self)
-print(addition(3,4))
+calc = Calculator()
