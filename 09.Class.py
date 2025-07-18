@@ -72,10 +72,22 @@ class cat(animal):
     def speak(self):
         print(f"{self.name}가 야옹 소리를 냅니다")
 
-g= cat("나비")
+g=cat("나비")
 
 g.speak()
 
 # cat class(자식)는 animal class(부모)를 상속받아, speak함수를 재정의(overriding)하였습니다
 
+
+# class 변수와 instance 변수
+
+# class 변수란, class 전체에서 공유되는 변수이다.
+# instance 변수란, 각 객체에서 유지되는 변수이다.
+
+class circle:
+    pi=3.14 #class 변수
+    def __init__(self,radius):
+        self.radius=radius #instance 변수
+    def area(self):
+        return circle.pi * (self.radius ** 2)
 
