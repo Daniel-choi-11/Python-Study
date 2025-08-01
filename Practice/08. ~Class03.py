@@ -10,6 +10,7 @@
 - input으로 원하는 2를 넣은다음, 나라들 간의 시차 계산기능 만들기
 - 
 '''
+# -------------------------------------------------------------------
 
 import pytz
 from datetime import datetime
@@ -27,15 +28,16 @@ Country = {
 }
 now_ny = datetime.now(pytz.timezone('America/New_York'))
 
-
+'''
 def timezone(userinput):
     now_tz = datetime.now(pytz.timezone(userinput))
     if userinput not in Country:
         return f"{userinput}는 지원하지 않습니다."
-    if userinput in Country:
+    elif userinput in Country:
         return f"{userinput}의 시간대는: {now_tz}"
 
-'''
+userinput= input()
+
 문제점 및 개선점
 1. userinput과 Country 딕셔너리
 userinput에는 나라 이름(예: "한국")을 넣어야 하고, 이걸 Country 딕셔너리에서 타임존 문자열로 변환해야 함.
@@ -44,16 +46,8 @@ userinput에는 나라 이름(예: "한국")을 넣어야 하고, 이걸 Country
 지금 코드는 userinput(= "한국" 등)를 직접 넣어서 에러가 남.
 '''
 
-def calculator(userinput1, userinput2):
-    if userinput1 not in Country:
-        return f"{userinput1}는 지원하지 않습니다."
-    if userinput2 not in Country:
-        return f"{userinput2}는 지원하지 않습니다."
-    if userinput1, userinput2 in 
-
-
-
-# 좋은 버전
+# -------------------------------------------------------------------
+# 개선한 버전
 def timezone(country):
     if country not in Country:
         return f"{country}는 지원하지 않아요."
@@ -64,3 +58,12 @@ def timezone(country):
 
 user_input = input("나라 이름을 입력하세요: ")
 print(timezone(user_input))
+
+# -------------------------------------------------------------------
+
+def calculator(userinput1, userinput2):
+    if userinput1 not in Country:
+        return f"{userinput1}는 지원하지 않습니다."
+    if userinput2 not in Country:
+        return f"{userinput2}는 지원하지 않습니다."
+    if userinput1, userinput2 in 
