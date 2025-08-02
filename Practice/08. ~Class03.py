@@ -59,10 +59,28 @@ user_input = input("나라 이름을 입력하세요: ")
 print(timezone(user_input))
 
 # -------------------------------------------------------------------
+# 시차 계산기
 
-def calculator(userinput1, userinput2):
-    if userinput1 not in Country:
-        return f"{userinput1}는 지원하지 않습니다."
-    if userinput2 not in Country:
-        return f"{userinput2}는 지원하지 않습니다."
-    if userinput1, userinput2 in 
+def calculator(country1, country2):
+    if country1 not in Country:
+        return f"{country1}는 지원하지 않습니다."
+    if country2 not in Country:
+        return f"{country2}는 지원하지 않습니다."
+    tz1 = pytz.timezone(Country[country1])
+    tz2 = pytz.timezone(Country[country2])
+    now = datetime.now(timezone.utc)
+
+    now_tz1 = now.astimezone(tz1)
+    now_tz2 = now.astimezone(tz2)
+    offset1 = now_tz1.utcoffset()
+    offset2 = now_tz2.utcoffset()
+    if offset1 is None or offset2 is None: 
+        return "오류가 발생했습니다"
+    diff_hours = int(abs((offset1 - offset2).total_seconds()) // 3600)
+    return f"{country1}와 {country2}의 시차는: {diff_hours}시간"
+
+country1= input("첫번째 나라를 입력하세요:").strip()
+country2= input("처음에 입력하신 나라의 시차를 알고싶은 나라를 입력하세요:").strip()
+print(calculator(country1,country2))
+
+
