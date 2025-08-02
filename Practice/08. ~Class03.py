@@ -26,7 +26,6 @@ Country = {
     "싱가포르": "Singapore",
     "러시아": "Europe/Moscow"
 }
-now_ny = datetime.now(pytz.timezone('America/New_York'))
 
 '''
 def timezone(userinput):
