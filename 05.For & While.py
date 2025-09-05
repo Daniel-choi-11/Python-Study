@@ -16,7 +16,7 @@ for i in range(5):
 # 1-1-1. 
     # 기본 사용법: 괄호안에 숫자를 쓰면, 그 숫자만큼 반복한다
     # 시작점과 끝 지정: range(start, stop)을 사용하면, start부터 stop-1까지의 숫자를 생성한다
-    # 증가폭 지정: range(start, stop, step)을 사용하면 증가폭을 지정2할수있다
+    # 증가폭 지정: range(start, stop, step)을 사용하면 증가폭을 지정 할수있다
     # 감소폭 지정: range(start, stop, step)을 사용하면 감소폭을 지정할수있다
 
 for i in range(2,10,2):
