@@ -39,5 +39,8 @@ print(D)
 # sys.getsizeof
 # 객체의 크기를 바이트 단위롤 나타낸다.
 
+#sys.stdin.readline()
+# input이랑 같은 기능. 그러나 훨씬 빠르게 작동
+
 # sys.getdefaultencoding
 # 파이썬의 문자열 인코딩 단위
